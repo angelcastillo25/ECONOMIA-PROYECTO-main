@@ -1,0 +1,56 @@
+.navar{
+    background-color: #333237;
+    height:70px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px 20px;
+}
+
+.div2{
+    width: 500px;
+}
+
+#titulo{
+    padding: 10px 10px;
+    background: #333237;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+}
+
+#contenedor-locales{
+    margin: 20px; /* Establece el margen en 20px */
+}
+
+.card {
+    max-width: 400px; /* Establece el ancho máximo de la tarjeta en 400px */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    border-radius: 40px;
+    
+}
+
+.card-text {
+    font-size: 14px; /* Reduce el tamaño del texto */
+}
+
+.card-img-overlay {
+    display: flex; /* Usa flexbox para el contenedor de superposición */
+    flex-direction: column; /* Coloca los elementos en columnas */
+    justify-content: flex-end; /* Alinea los elementos al final del eje principal (abajo) */
+    
+}
+
+.card-title {
+    margin: 0; /* Elimina el margen predeterminado del título */
+    padding: 10px; /* Agrega un relleno alrededor del título */
+    color: white; /* Color de texto blanco */
+    text-align: end;
+    font-size: 25px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm" style="width: 300px;">
+            <h2>Iniciar Sesión</h2>
+            <div class="social-icons">
+                <a href="#" class="icon">
+                <i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon">
+                <i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon">
+                <i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="icon">
+                <i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="input-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" onclick="login()">Iniciar Sesión</button>
+            <a class="registrarse" href="">Registrarse</a>
+            <p style="text-align: center; font-size: smaller;">A continuacion, aceptas nuestros terminos de uso y politicas de privacidad</p>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Aquí deberías implementar la lógica de verificación del usuario y contraseña
+            // Por ejemplo, puedes comparar con una lista predefinida de usuarios
+
+            // Ejemplo de verificación
+            if (username === "usuario" && password === "contraseña") {
+                alert("Inicio de sesión exitoso. ¡Bienvenido!");
+                // Aquí puedes redirigir a otra página o realizar otras acciones después del inicio de sesión exitoso
+            } else {
+                alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
+            }
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/a4c3e4081a.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
